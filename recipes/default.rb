@@ -76,7 +76,7 @@ when "debian", "ubuntu"
   end
 
   service "supervisor" do
-    action [:enable, :start]
+    action :enable
   end
 when "smartos"
   directory "/opt/local/share/smf/supervisord" do
